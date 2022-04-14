@@ -24,7 +24,8 @@ Requires Java version 1.8 or later.
 3. Run the program with run.bat
    - You might want to run with `"makeColouredMaps": true` until you get the output you want. Then run again with `"makeColouredMaps": false` or manually remove all of the coloured images from each planet directory
    - Writing/compressing pngs can take a surprisingly long time
-4. Copy the contents of the `PlanetDataFiles` directory from step 1. to a new directory in the Space Engineers mod directory (`C:\Users\<username>\AppData\Roaming\SpaceEngineers\Mods\`)
+4. Copy the contents of the `PlanetDataFiles` directory from step 1. to a new directory in the Space Engineers mod directory
+   - Be sure to make a second directory inside the new one called `data`. (The files should be copied to `C:\Users\<username>\AppData\Roaming\SpaceEngineers\Mods\<new directory>\data`)
    - Space Engineers will not load a mod if it touches a planet but does not contain the heightmaps (`front.png` etc), even if they are present elsewhere. 
 5. Copy the outputs of the generator tool, `PlanetDataFiles` and `PlanetGeneratorDefinition.sbc`, to the Space Engineers mod direcory from the step above, overwriting any files.
    - There may be multiple `.sbc` files output. All should be copied.
